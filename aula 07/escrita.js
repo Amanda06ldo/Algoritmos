@@ -26,13 +26,12 @@ switch(horario) {
 }
 
 let filme = 'fantasia'
-let valor = '15reias'
-if(filme !== 'fantasia'){
-    console.log('você só curte o genero fantasia')
-}
-else if (valor !== '15reias'){
-    console.log('você não tem dinheiro suficiente')
+let valor = 12
+let lanche = 'pipoca'
+if(filme === 'fantasia' && valor < 15){
+    console.log('Bom filme!')
+    console.log('aproveita sua',lanche)
 }
 else{
-    console.log('vamos para o cinema')
+    console.log('Escolha outro filme')
 }

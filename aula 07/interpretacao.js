@@ -62,4 +62,4 @@ console.log(mensagem)
 
 //b) Considere um usuário digitou o número 10. Qual será a mensagem do terminal? E se fosse o número -10?
 // o numero 10 ira aparecer 'esse número passou no teste', o numero -10 ira aparecer 'Essa mensagem é secreta!!!'
-//c) Haverá algum erro no console? não
+//c) Haverá algum erro no console? nao

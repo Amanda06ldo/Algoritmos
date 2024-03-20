@@ -1,10 +1,91 @@
-//Modifique o código do exercício 4 de escrita de código para, antes de imprimir a mensagem "Bom filme!", mostre qual lanchinho ele vai comprar (pipoca, chocolate, doces, etc) e imprima no console as mensagens "Bom filme!" e "Aproveite o seu [LANCHINHO]", trocando [LANCHINHO] pelo que valor da variavel. Exemplo Entradas: "fantasia" | "10" Saída: Qual snack que você quer comprar?​Entrada: "chocolate" Saída: "Bom filme!" "Aproveite o seu chocolate"
+// Definindo as informações fornecidas pelo usuário
+let nomeCompleto = "João Silva";
+let tipoJogo = "IN"; // IN para internacional, DO para doméstico
+let etapaJogo = "FI"; // SF para semifinal, DT para decisão de terceiro lugar, FI para final
+let categoria = 2; // 1, 2, 3 ou 4
+let quantidadeIngressos = 3;
 
-//Você foi contratado para criar um sistema de vendas de ingressos de jogos de um estádio de futebol. Para esta compra,você vai fornecer algumas informações:
+// Definindo os valores dos ingressos de acordo com o tipo de jogo, etapa do jogo e categoria
+let valorIngresso;
+switch (etapaJogo) {
+    case "SF":
+        switch (categoria) {
+            case 1:
+                valorIngresso = 1320;
+                break;
+            case 2:
+                valorIngresso = 880;
+                break;
+            case 3:
+                valorIngresso = 550;
+                break;
+            case 4:
+                valorIngresso = 220;
+                break;
+            default:
+                console.log("Categoria de ingresso inválida.");
+                return;
+        }
+        break;
+    case "DT":
+        switch (categoria) {
+            case 1:
+                valorIngresso = 660;
+                break;
+            case 2:
+                valorIngresso = 440;
+                break;
+            case 3:
+                valorIngresso = 330;
+                break;
+            case 4:
+                valorIngresso = 170;
+                break;
+            default:
+                console.log("Categoria de ingresso inválida.");
+                return;
+        }
+        break;
+    case "FI":
+        switch (categoria) {
+            case 1:
+                valorIngresso = 1980;
+                break;
+            case 2:
+                valorIngresso = 1320;
+                break;
+            case 3:
+                valorIngresso = 880;
+                break;
+            case 4:
+                valorIngresso = 330;
+                break;
+            default:
+                console.log("Categoria de ingresso inválida.");
+                return;
+        }
+        break;
+    default:
+        console.log("Etapa do jogo inválida.");
+        return;
+}
 
-//Nome completo;
-//Tipo de jogo: IN indica internacional; e DO indica doméstico;
-//Etapa do jogo: SF indica semi-final; DT indica decisão de terceiro lugar; e FI indica final
-//Categoria: pode ser as opções 1, 2, 3 ou 4;
-//Quantidade de ingressos
-//O sistema deve imprimir tudo isso, junto com o valor de cada ingresso e o valor total que o usuário tem que pagar (ou seja, o valor unitário do ingresso multiplicado pela quantidade). Junto nesta pasta há a tabela com os valores de cada ingresso e exemplos de execução do programa. Lembrando que o valor de jogos internacionais é o mesmo de jogos domésticos, mas seus preços devem ser multiplicados pelo valor do dólar (considerar o dólar = R$4,10)
+// Se o jogo for internacional, multiplicar o valor do ingresso pelo valor do dólar
+if (tipoJogo === "IN") {
+    //valorIngresso *= 4.10;
+    //let valorInternacional = valorIngresso * 4.10
+    valorIngresso = valorIngresso * 4.10
+
+}
+
+// Calculando o valor total a ser pago
+let valorTotal = valorIngresso * quantidadeIngressos;
+
+// Imprimindo todas as informações
+console.log("Nome: " + nomeCompleto);
+console.log("Tipo de jogo: " + (tipoJogo === "IN" ? "Internacional" : "Doméstico"));
+console.log("Etapa do jogo: " + (etapaJogo === "SF" ? "Semifinal" : (etapaJogo === "DT" ? "Decisão de Terceiro Lugar" : "Final")));
+console.log("Categoria: " + categoria);
+console.log("Quantidade de ingressos: " + quantidadeIngressos);
+console.log("Valor do ingresso: R$ " + valorIngresso.toFixed(2));
+console.log("Valor total a ser pago: R$ " + valorTotal.toFixed(2));
