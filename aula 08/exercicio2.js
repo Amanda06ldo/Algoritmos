@@ -14,15 +14,3 @@ rl.question('Qual a sua idade?',(idade) => {
     }
     rl.close();
 });
-
-const senha = 2610
-rl.question('Qual é a senha?',(senha) => {
-    console.log('sua idade é:',senha); 
-   if() {
-        console.log("Você é maior de idade")
-    }
-    else {
-        console.log("Você é menor de idade")
-    }
-    rl.close();
-});
