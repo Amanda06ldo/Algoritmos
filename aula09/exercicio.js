@@ -10,5 +10,6 @@ function verificaNumero(numero){
     } else {
         console.log(`O número ${numero} é impar`)
     }
+
 }
 verificaNumero(80)
