@@ -62,3 +62,4 @@ console.log(`Essas são as minhas comidas preferidas:
     listaDeTarefas.splice(excluir,1)
     console.log(listaDeTarefas) 
     */
+    
