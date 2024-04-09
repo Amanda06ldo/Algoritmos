@@ -8,6 +8,7 @@ if (numero % 2 === 0) {
      console.log("Não passou no teste.") 
     }
 
+/*
 // a) Explique o que o código faz. Qual o teste que ele realiza? 
 // O codigo diz passou no teste, quando uma pessoa poe um numero que ao ser dividido por 2 o resto é zero, e se o numero tiver resto ele imprime não passou no teste
 //b) Para que tipos de números ele imprime no console "Passou no teste"? 
@@ -63,3 +64,4 @@ console.log(mensagem)
 //b) Considere um usuário digitou o número 10. Qual será a mensagem do terminal? E se fosse o número -10?
 // o numero 10 ira aparecer 'esse número passou no teste', o numero -10 ira aparecer 'Essa mensagem é secreta!!!'
 //c) Haverá algum erro no console? nao
+*/
