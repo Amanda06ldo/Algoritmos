@@ -1,12 +1,12 @@
-const numero = [14, 67, 89, 19]
-let maiorNumero = 0
-function calculaMaior(array){
-    for(let i = 0; i< array.lenght;){
-    if (array[i] >maiorNumero){
-        maiorNumero=array[i]
+let arrayDeNumeros = [2,3,4,5,6,7,24,29,46,]
+let nMaior = 0
+
+function verificaMaior(array){
+    for(let i = 0; i < array.length; i++){
+    if (array[i] > nMaior){
+        nMaior=array[i]
     }
 }
-return maiorNumero
+return nMaior
 }
-calculaMaior(numero)
-console.log(maiorNumero)
+console.log(verificaMaior(arrayDeNumeros))
