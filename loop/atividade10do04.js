@@ -43,7 +43,7 @@ if(i % 3 && i % 5 === 0){
     } else 
         console.log(i)
     
-*/
+
 const readlineSync = require('readline-sync')
 nMaior = 0
 nMenor = 9999999999999
@@ -63,5 +63,13 @@ console.log("O maior numero é",nMaior)
 console.log("O menor numero é",nMenor)
 
 
+const readlineSync = require('readline-sync')
+fatorial = 1
+ for(let i = 1; i <= 10;i++){
+   fatorial = fatorial * i
+   console.log(fatorial)
 
- 
+
+ }
+*/
+
